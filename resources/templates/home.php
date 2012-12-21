@@ -1,6 +1,9 @@
 <div id="centerleft">
-    <?php require_once(TEMPLATES_PATH . "/center.php"); ?>
-    <?php require_once(TEMPLATES_PATH . "/left.php"); ?>
+    <?php
+        foreach($layout['regions'] as $file){
+            require_once(TEMPLATES_PATH . "/" .$file);
+        }
+    ?>
 </div>
 
 <?php

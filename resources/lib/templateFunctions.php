@@ -46,6 +46,7 @@
             }
         }
         $hassearcher = (isset($layout['options']) && isset($layout['options']['searcher']) && $layout['options']['searcher'] == true);
+        $hasspam = (isset($layout['spam']));
 
         require_once(TEMPLATES_PATH . "/header.php");
         //TODO si no tiene searcher cargar una cabecera con logo y tal vez login
@@ -61,7 +62,9 @@
 
         (file_exists($contentFileFullPath)) ?   require_once($contentFileFullPath): require_once(TEMPLATES_PATH . "/error.php");
 
-        require_once(TEMPLATES_PATH . "/right.php");
+        //Zona de spam
+        if($hasspam) require_once(TEMPLATES_PATH . "/" .$layout['spam']);
+
         echo "\t\t</div>\n"; // close container-canvas div
         echo "<div class=\"clear\"></div>";
         echo "\t\t\t</div>\n"; // close container-canvas-wrapper div
