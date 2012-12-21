@@ -25,6 +25,20 @@ $config = array(
         )
     )
 );
+
+$layout = array(
+    'base' => array(
+        'file' => 'home.php',
+        'regions' => array('center.php', 'left.php'),
+        'spam' => 'right.php',
+        'options' => array('searcher'=>true)
+    ),
+    'index' => array(
+        'file' => 'frontpage.php',
+        'regions' => array('center.php'),
+        'options' => array('searcher'=>false)
+    )
+);
 /*
     I will usually place the following in a bootstrap file or some type of environment
     setup file (code that is run at the start of every page request), but they work

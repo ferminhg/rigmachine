@@ -10,5 +10,6 @@
     $variables = array(
         'setInIndexDotPhp' => $setInIndexDotPhp
     );
-    renderLayoutWithContentFile("home.php", $variables);
+    // renderLayoutWithContentFile('home.php', $variables);
+    renderLayourWithLayoutArray($layout['base'], $variables);
 ?>
