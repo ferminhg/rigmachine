@@ -1,7 +1,7 @@
 <?php
-namespace Album;
-use Album\Model\Album;
-use Album\Model\AlbumTable;
+namespace Geartype;
+use Geartype\Model\Geartype;
+use Geartype\Model\GeartypeTable;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
 
@@ -26,16 +26,16 @@ class Module
     {
         return array(
             'factories' => array(
-                'Album\Model\AlbumTable' =>  function($sm) {
-                    $tableGateway = $sm->get('AlbumTableGateway');
-                    $table = new AlbumTable($tableGateway);
+                'Geartype\Model\GeartypeTable' =>  function($sm) {
+                    $tableGateway = $sm->get('GeartypeTableGateway');
+                    $table = new GearTypeTable($tableGateway);
                     return $table;
                 },
-                'AlbumTableGateway' => function ($sm) {
+                'GeartypeTableGateway' => function ($sm) {
                     $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
                     $resultSetPrototype = new ResultSet();
-                    $resultSetPrototype->setArrayObjectPrototype(new Album());
-                    return new TableGateway('album', $dbAdapter, null, $resultSetPrototype);
+                    $resultSetPrototype->setArrayObjectPrototype(new Geartype());
+                    return new TableGateway('geartype', $dbAdapter, null, $resultSetPrototype);
                 },
             ),
         );
@@ -46,3 +46,4 @@ class Module
         return include __DIR__ . '/config/module.config.php';
     }
 }
+

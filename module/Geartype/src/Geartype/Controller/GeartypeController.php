@@ -1,39 +1,38 @@
 <?php
-namespace Album\Controller;
+namespace Geartype\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Album\Model\Album;
-use Album\Form\AlbumForm;
+use Geartype\Model\Geartype;
+use Geartype\Form\GeartypeForm;
 
-class AlbumController extends AbstractActionController
+class GeartypeController extends AbstractActionController
 {
-    protected $albumTable;
+    protected $geartypeTable;
 
     public function indexAction()
     {
         return new ViewModel(array(
-            'albums' => $this->getAlbumTable()->fetchAll(),
+            'geartypes' => $this->getGearTypeTable()->fetchAll(),
         ));
     }
 
     public function addAction()
     {
-        $form = new AlbumForm();
+        $form = new GeartypeForm();
         $form->get('submit')->setValue('Add');
 
         $request = $this->getRequest();
         if ($request->isPost()) {
-            $album = new Album();
-            $form->setInputFilter($album->getInputFilter());
+            $geartype = new Geartype();
+            $form->setInputFilter($geartype->getInputFilter());
             $form->setData($request->getPost());
 
             if ($form->isValid()) {
-                $album->exchangeArray($form->getData());
-                $this->getAlbumTable()->saveAlbum($album);
+                $geartype->exchangeArray($form->getData());
+                $this->getGeartypeTable()->saveGeartype($geartype);
 
-                // Redirect to list of albums
-                return $this->redirect()->toRoute('album');
+                return $this->redirect()->toRoute('geartype');
             }
         }
         return array('form' => $form);
@@ -43,36 +42,33 @@ class AlbumController extends AbstractActionController
     {
         $id = (int) $this->params()->fromRoute('id', 0);
         if (!$id) {
-            return $this->redirect()->toRoute('album', array(
+            return $this->redirect()->toRoute('geartype', array(
                 'action' => 'add'
             ));
         }
 
-        // Get the Album with the specified id.  An exception is thrown
-        // if it cannot be found, in which case go to the index page.
         try {
-            $album = $this->getAlbumTable()->getAlbum($id);
+            $geartype = $this->getGeartypeTable()->getGeartype($id);
         }
         catch (\Exception $ex) {
-            return $this->redirect()->toRoute('album', array(
+            return $this->redirect()->toRoute('geartype', array(
                 'action' => 'index'
             ));
         }
 
-        $form  = new AlbumForm();
-        $form->bind($album);
+        $form  = new GearTypeForm();
+        $form->bind($geartype);
         $form->get('submit')->setAttribute('value', 'Edit');
 
         $request = $this->getRequest();
         if ($request->isPost()) {
-            $form->setInputFilter($album->getInputFilter());
+            $form->setInputFilter($geartype->getInputFilter());
             $form->setData($request->getPost());
 
             if ($form->isValid()) {
-                $this->getAlbumTable()->saveAlbum($form->getData());
+                $this->getGeartypeTable()->saveGeartype($form->getData());
 
-                // Redirect to list of albums
-                return $this->redirect()->toRoute('album');
+                return $this->redirect()->toRoute('geartype');
             }
         }
 
@@ -86,7 +82,7 @@ class AlbumController extends AbstractActionController
     {
         $id = (int) $this->params()->fromRoute('id', 0);
         if (!$id) {
-            return $this->redirect()->toRoute('album');
+            return $this->redirect()->toRoute('geartype');
         }
 
         $request = $this->getRequest();
@@ -95,25 +91,24 @@ class AlbumController extends AbstractActionController
 
             if ($del == 'Yes') {
                 $id = (int) $request->getPost('id');
-                $this->getAlbumTable()->deleteAlbum($id);
+                $this->getGeartypeTable()->deleteGeartype($id);
             }
 
-            // Redirect to list of albums
-            return $this->redirect()->toRoute('album');
+            return $this->redirect()->toRoute('geartype');
         }
 
         return array(
             'id'    => $id,
-            'album' => $this->getAlbumTable()->getAlbum($id)
+            'geartype' => $this->getGeartypeTable()->getGeartype($id)
         );
     }
 
-    public function getAlbumTable()
+    public function getGearTypeTable()
     {
-        if (!$this->albumTable) {
+        if (!$this->geartypeTable) {
             $sm = $this->getServiceLocator();
-            $this->albumTable = $sm->get('Album\Model\AlbumTable');
+            $this->geartypeTable = $sm->get('GearType\Model\GearTypeTable');
         }
-        return $this->albumTable;
+        return $this->geartypeTable;
     }
 }
