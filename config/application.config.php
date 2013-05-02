@@ -7,6 +7,7 @@ return array(
         'Geartype',
         'Admin',
         'Brand',
+        'Gear',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
