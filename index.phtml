@@ -1,0 +1,28 @@
+<?php
+$title = $this->translate('GearType List');
+$this->headTitle($title);
+?>
+<small><a href="<?php echo $this->url('admin', array('action'=>'index'));?>">volver admin</a></small>
+<h1><?php echo $this->escapeHtml($title); ?></h1> 
+<p>
+    <a href="<?php echo $this->url('geartype', array('action'=>'add'));?>"><?php echo $this->translate('Add nuevo geartype') ?></a>
+</p>
+
+<table class="table">
+<tr>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($geartypes as $geartype) : ?>
+<tr>
+    <td><?php echo $this->escapeHtml($geartype->name);?></td>
+    <td>
+        <a href="<?php echo $this->url('geartype',
+            array('action'=>'edit', 'id' => $geartype->id));?>">Edit</a>
+        <a href="<?php echo $this->url('geartype',
+            array('action'=>'delete', 'id' => $geartype->id));?>">Delete</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>

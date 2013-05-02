@@ -1,0 +1,34 @@
+<?php
+$title = $this->translate('Brand List');
+$this->headTitle($title);
+?>
+<small><a href="<?php echo $this->url('admin', array('action'=>'index'));?>">volver admin</a></small>
+<h1><?php echo $this->escapeHtml($title); ?></h1> 
+<p>
+    <a href="<?php echo $this->url('brand', array('action'=>'add'));?>"><?php echo $this->translate('Add new Brand') ?></a>
+</p>
+
+<table class="table">
+<tr>
+    <th>Name</th>
+    <th>Text</th>
+    <th>Web</th>
+    <th>Img</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($brands as $brand) : ?>
+<tr>
+    <td><?php echo $this->escapeHtml($brand->name);?></td>
+    <td><a href="<?php echo $this->escapeHtml($brand->text);?>" target="_blank"><?php echo $this->escapeHtml($brand->text);?></a></td>
+    <td><?php echo $this->escapeHtml($brand->web);?></td>
+    <td><img src="<?php echo $brand->img;?>"></td>
+    
+    <td>
+        <a href="<?php echo $this->url('brand',
+            array('action'=>'edit', 'id' => $brand->id));?>">Edit</a>
+        <a href="<?php echo $this->url('brand',
+            array('action'=>'delete', 'id' => $brand->id));?>">Delete</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>

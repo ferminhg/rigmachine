@@ -3,6 +3,98 @@
 	{
 		"selected_items":
 		[
+			[
+				"gear",
+				"geartypes"
+			],
+			[
+				"sub",
+				"substr"
+			],
+			[
+				"codig",
+				"codigoCompeticion"
+			],
+			[
+				"marcador",
+				"marcadorEnjuego"
+			],
+			[
+				"list",
+				"listaCompeticiones"
+			],
+			[
+				"ts",
+				"tsIdComas"
+			],
+			[
+				"sta",
+				"stage_id"
+			],
+			[
+				"dats",
+				"datosPartido"
+			],
+			[
+				"datos",
+				"datosPartido"
+			],
+			[
+				"dato",
+				"datosPartido"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"select",
+				"selectedIndex"
+			],
+			[
+				"st",
+				"standing"
+			],
+			[
+				"lista_",
+				"lista_tarjetas"
+			],
+			[
+				"lista",
+				"listaController"
+			],
+			[
+				"menu",
+				"menujornadas_"
+			],
+			[
+				"jorna",
+				"jornada_seleccionada"
+			],
+			[
+				"jo",
+				"jornadas"
+			],
+			[
+				"arr",
+				"arr_status"
+			],
+			[
+				"contruirPartido",
+				"construirPartidoComun"
+			],
+			[
+				"futbol",
+				"futbolamericano"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"segunda",
+				"segundadivision"
+			]
 		]
 	},
 	"buffers":
@@ -11,15 +103,35 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 348.0,
 		"selected_items":
 		[
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"git",
+				"Git: Init"
+			]
 		],
-		"width": 0.0
+		"width": 521.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 139.0
 	},
 	"distraction_free":
 	{
@@ -32,10 +144,124 @@
 	},
 	"file_history":
 	[
+		"/home/fermin/projects/rigmachine/module/Geartype/config/module.config.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/view/geartype/geartype/index.phtml",
+		"/home/fermin/projects/rigmachine/init_autoloader.php",
+		"/home/fermin/projects/rigmachine/README.md",
+		"/home/fermin/projects/rigmachine/.gitignore",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Controller/GeartypeController.php",
+		"/home/fermin/projects/rigmachine/module/Admin/src/Admin/Controller/AdminController.php",
+		"/home/fermin/projects/rigmachine/module/Admin/view/admin/admin/index.phtml",
+		"/home/fermin/projects/rigmachine/module/Admin/config/module.config.php",
+		"/home/fermin/projects/rigmachine/config/application.config.php",
+		"/home/fermin/projects/rigmachine/module/Admin/Module.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/Module.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/autoload_classmap.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/view/geartype/geartype/delete.phtml",
+		"/home/fermin/projects/rigmachine/module/Geartype/view/geartype/geartype/add.phtml",
+		"/home/fermin/projects/rigmachine/module/Album/src/Album/Controller/AlbumController.php",
+		"/home/fermin/projects/rigmachine/module/Album/view/album/album/add.phtml",
+		"/home/fermin/projects/rigmachine/module/Geartype/view/geartype/geartype/edit.phtml",
+		"/home/fermin/projects/rigmachine/module/Album/view/album/album/delete.phtml",
+		"/home/fermin/projects/rigmachine/module/Album/view/album/album/edit.phtml",
+		"/home/fermin/projects/rigmachine/module/Application/config/module.config.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Form/GeartypeForm.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Model/Geartype.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Model/GeartypeTable.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Model/GearTypeTable.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Model/GearType.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Form/GearTypeForm.php",
+		"/home/fermin/projects/rigmachine/module/Geartype/src/Geartype/Controller/GearTypeController.php",
+		"/home/fermin/projects/rigmachine/module/GearType/config/module.config.php",
+		"/home/fermin/projects/rigmachine/module/GearType/Module.php",
+		"/home/fermin/projects/rigmachine/module/GearType/autoload_classmap.php",
+		"/home/fermin/projects/rigmachine/module/GearType/view/geartype/geartype/index.phtml",
+		"/home/fermin/projects/rigmachine/module/Album/config/module.config.php",
+		"/home/fermin/projects/rigmachine/module/Album/Module.php",
+		"/home/fermin/projects/rigmachine/module/GearType/src/GearType/Form/GearTypeForm.php",
+		"/home/fermin/projects/rigmachine/module/Album/src/Album/Form/AlbumForm.php",
+		"/home/fermin/projects/rigmachine/module/GearType/src/GearType/Model/GearType.php",
+		"/home/fermin/projects/rigmachine/module/Album/src/Album/Model/Album.php",
+		"/home/fermin/projects/rigmachine/module/Album/src/Album/Model/AlbumTable.php",
+		"/home/fermin/projects/rigmachine/module/GearType/src/GearType/Controller/GearTypeController.php",
+		"/home/fermin/projects/rigmachine/module/GearType/src/GearType/Model/GearTypeTable.php",
+		"/home/fermin/projects/rigmachine/module/GearType/src/GearType/Model/GearType",
+		"/home/fermin/projects/rigmachine/module/GearType/view/geartype/geartype/add.phtml",
+		"/home/fermin/projects/rigmachine/module/GearType/view/geartype/geartype/delete.phtml",
+		"/home/fermin/projects/rigmachine/module/GearType/view/geartype/geartype/edit.phtml",
+		"/home/fermin/projects/rigmachine/module/Album/autoload_classmap.php",
+		"/home/fermin/projects/rigmachine/LICENSE.txt",
+		"/home/fermin/projects/rigmachine/module/Application/view/layout/layout.phtml",
+		"/home/fermin/projects/rigmachine/config/autoload/local.php",
+		"/home/fermin/projects/rigmachine/public/css/style.css",
+		"/home/fermin/projects/rigmachine/config/autoload/local.php.dist",
+		"/var/www/marcadoresonline/api/controlador.php",
+		"/var/www/marcadoresonline/api/index.php",
+		"/var/www/marcadoresonline/inc_pagina/menu/data.json.php",
+		"/var/www/marcadoresonline/movil/js/cw/Objects.js",
+		"/var/www/marcadoresonline/cron/streaming/load_streaming.php",
+		"/var/www/marcadoresonline/includes/constantes_idiomas.php",
+		"/var/www/marcadoresonline/includes/idioma.php",
+		"/var/www/marcadoresonline/lib/dao/MetasDao.php",
+		"/var/www/marcadoresonline/includes/bd.php",
+		"/var/www/marcadoresonline/index_make_cache.sh",
+		"/var/www/marcadoresonline/enetpulse/dao/eventDao.php",
+		"/var/www/marcadoresonline/tenis/index.php",
+		"/var/www/marcadoresonline/futbol/index.php",
+		"/var/www/marcadoresonline/inc_pagina/partidos_futbol_indexTV.php",
+		"/var/www/marcadoresonline/.htaccess",
+		"/var/www/marcadoresonline/baloncesto/index.php",
+		"/var/www/marcadoresonline/lib/dao/google_eventos.php",
+		"/var/www/marcadoresonline/lib/dao/ParametrosDao.php",
+		"/var/www/marcadoresonline/inc_pagina/centroIzq.php",
+		"/var/www/marcadoresonline/enetpulse/dao/tournamentDao.php",
+		"/var/www/marcadoresonline/clasificacion/clasificacion_make_cache.php",
+		"/var/www/marcadoresonline/clasificacion/clasificacion.php",
+		"/var/www/marcadoresonline/includes/conf/bd.conf",
+		"/var/www/marcadoresonline/clasificacion/includes/cnt_clasificacion_centro.php",
+		"/var/www/marcadoresonline/enetpulse/dao/torneosEPDao.php",
+		"/var/www/marcadoresonline/inc_pagina/centroIzq_menu.php",
+		"/var/www/marcadoresonline/index_make_cache.php",
+		"/var/www/marcadoresonline/enetpulse/dao/competicionEPDao.php",
+		"/var/www/marcadoresonline/index.php",
+		"/var/www/marcadoresonline/includes/staticpage.php",
+		"/var/www/marcadoresonline/lib/dao/paises_nombresDao.php",
+		"/var/www/marcadoresonline/enetpulse/dao/tournament_stageDao.php",
+		"/var/www/marcadoresonline/futbol/liga.php",
+		"/tmp/fz3temp-1/liga.php",
+		"/var/www/marcadoresonline/ligamarcadores/mostrar_liga.php",
+		"/var/www/marcadoresonline/ligamarcadores/mostrar.php",
+		"/var/www/marcadoresonline/ligamarcadores/index.php",
+		"/var/www/marcadoresonline/ligamarcadores/login/index.php",
+		"/var/www/marcadoresonline/lib/logic/liga/mandarmailrecordatorio_j1.php",
+		"/var/www/marcadoresonline/lib/logic/liga/mandarmailrecordatorio.php",
+		"/var/www/marcadoresonline/lib/logic/liga/mandarmailsemanal.php",
+		"/var/www/marcadoresonline/lib/logic/liga/mandarmailpremios.php",
+		"/var/www/marcadoresonline/enetpulse/dao/imageDao.php",
+		"/var/www/marcadoresonline/movil/index.html",
+		"/var/www/marcadoresonline/clasificacion/includes/obtenerClasificacionEP.php",
+		"/var/www/marcadoresonline/enetpulse/dao/standingDao.php",
+		"/var/www/marcadoresonline/js/clasificacion/clasificacionesTenis.js",
+		"/var/www/marcadoresonline/clasificacion/index.php",
+		"/var/www/marcadoresonline/movil/js/controller.js",
+		"/var/www/marcadoresonline/inc_pagina/estadisticas.php",
+		"/var/www/marcadoresonline/inc_pagina/leyendadeportes.php",
+		"/var/www/marcadoresonline/inc_pagina/centroMenu.php",
+		"/tmp/fz3temp-1/centroIzq.php",
+		"/tmp/fz3temp-1/centroIzq_menu.php",
+		"/var/www/marcadoresonline/movil/js/menu_izquierda.json",
+		"/home/fermin/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/fermin/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/fermin/.config/sublime-text-2/Packages/Terminal/Default (Linux).sublime-keymap",
+		"/home/fermin/.config/sublime-text-2/Packages/User/Gist.sublime-settings",
+		"/home/fermin/.config/sublime-text-2/Packages/Gist/Gist.sublime-settings",
+		"/home/fermin/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/home/fermin/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
+		"/var/www/marcadoresonline/foro/Packages/installed.list"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -49,6 +275,44 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Geartype",
+			"geartype",
+			"Geartype",
+			"album",
+			"getAlbum",
+			"Album",
+			"T",
+			"album",
+			"Album\\",
+			"artist",
+			"construirPartido",
+			"construirPartidoComun",
+			"getSetActual",
+			"convertPartidosUpdate",
+			"deporte",
+			"($deporte",
+			"$deporte",
+			"deporte",
+			"($deporte",
+			"$deporte",
+			"deporte",
+			"$deporte",
+			"obtenerPartidosStagePorJornadaIn",
+			"loading_partidos",
+			"obtenerClasificacionTenis",
+			"obtenerClasificacionTenis\nobtenerClasificacionTenis",
+			"textoabajo",
+			"mostrarPartidos",
+			"futbolamer",
+			"lista_goles",
+			".liga",
+			"getDataLiga",
+			"menujornadas_",
+			"menufechas",
+			"goles",
+			"mostrarPartidos",
+			" \"/",
+			"},"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -77,7 +341,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -102,6 +366,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -112,6 +380,222 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"contro",
+				"api/controlador.php"
+			],
+			[
+				"obje",
+				"movil/js/cw/Objects.js"
+			],
+			[
+				"menujson",
+				"inc_pagina/menu/data.json.php"
+			],
+			[
+				"constantes_idiomas",
+				"includes/constantes_idiomas.php"
+			],
+			[
+				"idioma",
+				"includes/idioma.php"
+			],
+			[
+				"metas",
+				"lib/dao/MetasDao.php"
+			],
+			[
+				"bd.php",
+				"includes/bd.php"
+			],
+			[
+				"index",
+				"index_make_cache.sh"
+			],
+			[
+				"partidos_futbol_indextv",
+				"inc_pagina/partidos_futbol_indexTV.php"
+			],
+			[
+				".ht",
+				".htaccess"
+			],
+			[
+				"event",
+				"enetpulse/dao/eventDao.php"
+			],
+			[
+				"google",
+				"lib/dao/google_eventos.php"
+			],
+			[
+				"centroizq",
+				"inc_pagina/centroIzq.php"
+			],
+			[
+				"parametrosdao",
+				"lib/dao/ParametrosDao.php"
+			],
+			[
+				"tourna",
+				"enetpulse/dao/tournamentDao.php"
+			],
+			[
+				"metasda",
+				"lib/dao/MetasDao.php"
+			],
+			[
+				"centroizq_menu",
+				"inc_pagina/centroIzq_menu.php"
+			],
+			[
+				"centroizq.php",
+				"inc_pagina/centroIzq.php"
+			],
+			[
+				"torneo",
+				"enetpulse/dao/torneosEPDao.php"
+			],
+			[
+				"cnt_clasificacion_centro",
+				"clasificacion/includes/cnt_clasificacion_centro.php"
+			],
+			[
+				"index_",
+				"index_make_cache.sh"
+			],
+			[
+				"competicionepdao.php",
+				"enetpulse/dao/competicionEPDao.php"
+			],
+			[
+				"liga.php",
+				"futbol/liga.php"
+			],
+			[
+				"eventd",
+				"enetpulse/dao/eventDao.php"
+			],
+			[
+				"tournament_stagedao.php",
+				"enetpulse/dao/tournament_stageDao.php"
+			],
+			[
+				"paises_nombresdao.php",
+				"lib/dao/paises_nombresDao.php"
+			],
+			[
+				"mandarma",
+				"lib/logic/liga/mandarmailsemanal.php"
+			],
+			[
+				"mandar",
+				"lib/logic/liga/mandarmailrecordatorio_j1.php"
+			],
+			[
+				"mandarmail",
+				"lib/logic/liga/mandarmailrecordatorio.php"
+			],
+			[
+				"mandara",
+				"lib/logic/liga/mandarmailpremios.php"
+			],
+			[
+				"bd.conf",
+				"includes/conf/bd.conf"
+			],
+			[
+				"image",
+				"enetpulse/dao/imageDao.php"
+			],
+			[
+				"static",
+				"includes/staticpage.php"
+			],
+			[
+				"controlado",
+				"api/controlador.php"
+			],
+			[
+				"apiinde",
+				"api/index.php"
+			],
+			[
+				"control",
+				"api/controlador.php"
+			],
+			[
+				"clasificacionestenis",
+				"js/clasificacion/clasificacionesTenis.js"
+			],
+			[
+				"standingdao",
+				"enetpulse/dao/standingDao.php"
+			],
+			[
+				"obtenerclasificacionep",
+				"clasificacion/includes/obtenerClasificacionEP.php"
+			],
+			[
+				"estadi",
+				"inc_pagina/estadisticas.php"
+			],
+			[
+				"leyendade",
+				"inc_pagina/leyendadeportes.php"
+			],
+			[
+				"centr",
+				"inc_pagina/centroIzq_menu.php"
+			],
+			[
+				"centro",
+				"inc_pagina/centroIzq.php"
+			],
+			[
+				"centrom",
+				"inc_pagina/centroMenu.php"
+			],
+			[
+				"controller",
+				"movil/js/controller.js"
+			],
+			[
+				"data.",
+				"inc_pagina/menu/data.json.php"
+			],
+			[
+				"controll",
+				"movil/js/controller.js"
+			],
+			[
+				"menu.php",
+				"inc_pagina/centroIzq_menu.php"
+			],
+			[
+				"obj",
+				"movil/js/cw/Objects.js"
+			],
+			[
+				"mandarm",
+				"lib/logic/liga/mandarmailrecordatorio_j1.php"
+			],
+			[
+				"mandarmailre",
+				"lib/logic/liga/mandarmailrecordatorio.php"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"menu.json",
+				"movil/js/menu_izquierda.json"
+			],
+			[
+				"object",
+				"movil/js/cw/Objects.js"
+			]
 		],
 		"width": 0.0
 	},
@@ -127,6 +611,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 259.0,
 	"status_bar_visible": true
 }
