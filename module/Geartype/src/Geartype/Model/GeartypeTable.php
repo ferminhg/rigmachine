@@ -29,7 +29,7 @@ class GeartypeTable
         return $row;
     }
 
-    public function saveGeartype(GearType $geartype)
+    public function saveGeartype(Geartype $geartype)
     {
         $data = array(
             'name' => $geartype->name,

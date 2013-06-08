@@ -5,7 +5,6 @@ return array(
         'Application',
         'Album',
         'Geartype',
-        'Admin',
         'Brand',
         'Gear',
     ),

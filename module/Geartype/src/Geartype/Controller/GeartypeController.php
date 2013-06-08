@@ -13,7 +13,7 @@ class GeartypeController extends AbstractActionController
     public function indexAction()
     {
         return new ViewModel(array(
-            'geartypes' => $this->getGearTypeTable()->fetchAll(),
+            'geartypes' => $this->getGeartypeTable()->fetchAll(),
         ));
     }
 
@@ -107,7 +107,7 @@ class GeartypeController extends AbstractActionController
     {
         if (!$this->geartypeTable) {
             $sm = $this->getServiceLocator();
-            $this->geartypeTable = $sm->get('GearType\Model\GearTypeTable');
+            $this->geartypeTable = $sm->get('Geartype\Model\GeartypeTable');
         }
         return $this->geartypeTable;
     }

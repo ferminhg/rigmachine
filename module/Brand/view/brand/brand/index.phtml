@@ -2,7 +2,6 @@
 $title = $this->translate('Brand List');
 $this->headTitle($title);
 ?>
-<small><a href="<?php echo $this->url('admin', array('action'=>'index'));?>">volver admin</a></small>
 <h1><?php echo $this->escapeHtml($title); ?></h1> 
 <p>
     <a href="<?php echo $this->url('brand', array('action'=>'add'));?>"><?php echo $this->translate('Add new Brand') ?></a>

@@ -11,7 +11,7 @@ return array(
             'gear' => array(
                 'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/admin/gear[/][:action][/:id]',
+                    'route'    => '/gear[/][:action][/:id]',
                     'constraints' => array(
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id'     => '[0-9]+',

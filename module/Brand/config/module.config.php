@@ -11,7 +11,7 @@ return array(
             'brand' => array(
                 'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/admin/brand[/][:action][/:id]',
+                    'route'    => '/brand[/][:action][/:id]',
                     'constraints' => array(
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id'     => '[0-9]+',
@@ -24,10 +24,10 @@ return array(
             ),
         ),
     ),
-
     'view_manager' => array(
         'template_path_stack' => array(
-            'geartype' => __DIR__ . '/../view',
+            'brand' => __DIR__ . '/../view',
         ),
     ),
+    
 );
