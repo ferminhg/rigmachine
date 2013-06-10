@@ -4,7 +4,6 @@ namespace Gear\Model;
 use Geartype\Model\GeartypeTable;
 use Brand\Model\Brand;
 
-
 use Zend\InputFilter\Factory as InputFactory;
 use Zend\InputFilter\InputFilter;
 use Zend\InputFilter\InputFilterAwareInterface;
