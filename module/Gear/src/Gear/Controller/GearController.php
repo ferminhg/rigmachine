@@ -9,11 +9,14 @@ use Gear\Form\GearForm;
 class GearController extends AbstractActionController
 {
     protected $gearTable;
+    protected $gearTableView;
 
 
     public function indexAction()
     {
-
+        return new ViewModel(array(
+            'gears' => $this->getGearTable()->getGears(),
+        ));
     }
 
     public function addAction()

@@ -1,1 +1,33 @@
-wopwop
+<?php
+$title = $this->translate('Gear List');
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1> 
+<p>
+    <a href="<?php echo $this->url('gear', array('action'=>'add'));?>"><?php echo $this->translate('Add new Gear') ?></a>
+</p>
+
+<table class="table">
+<tr>
+    <th>Name</th>
+    <th>Img</th>
+    <th>Geartype</th>
+    <th>Brand</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($gears as $gear) : ?>
+<tr>
+    <td><?php echo $this->escapeHtml($gear->name);?></td>
+    <td><img src="<?php echo $gear->img;?>"></td>
+    <td><?php echo $this->escapeHtml($gear->geartype_name);?></td>
+    <td><?php echo $this->escapeHtml($gear->brand_name);?></td>
+    
+    <td>
+        <a href="<?php echo $this->url('gear',
+            array('action'=>'edit', 'id' => $gear->id));?>">Edit</a>
+        <a href="<?php echo $this->url('gear',
+            array('action'=>'delete', 'id' => $gear->id));?>">Delete</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>
