@@ -1,0 +1,31 @@
+<?php
+
+$title = 'Band';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<p>
+    <a href="<?php echo $this->url('band', array('action'=>'add'));?>"><?php echo $this->translate('Add new band') ?></a>
+</p>
+
+<table class="table">
+<tr>
+    <th>Name</th>
+    <th>Web</th>
+    <th>Info</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($bands as $band) : ?>
+<tr>
+    <td><?php echo $this->escapeHtml($band->name); ?></td>
+    <td><a href="<?php echo $band->website;?>" target="_blank"><?php echo $band->website;?></a></td>
+    <td><?php echo $this->escapeHtml($band->info); ?></td>
+    <td>
+        <a href="<?php echo $this->url('band',
+            array('action'=>'edit', 'id' => $band->id));?>">Edit</a>
+        <a href="<?php echo $this->url('band',
+            array('action'=>'delete', 'id' => $band->id));?>">Delete</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>

@@ -8,6 +8,7 @@ return array(
         'Brand',
         'Gear',
         'Artist',
+        'Band',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
